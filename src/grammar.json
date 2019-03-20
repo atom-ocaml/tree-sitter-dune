@@ -310,7 +310,7 @@
                   "members": [
                     {
                       "type": "SYMBOL",
-                      "name": "variable_payload"
+                      "name": "variable_value"
                     },
                     {
                       "type": "BLANK"
@@ -340,7 +340,7 @@
         }
       }
     },
-    "variable_payload": {
+    "variable_value": {
       "type": "TOKEN",
       "content": {
         "type": "REPEAT1",

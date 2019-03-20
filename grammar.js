@@ -87,14 +87,14 @@ module.exports = grammar({
       $.variable_name,
       optional(seq(
         ':',
-        optional($.variable_payload)
+        optional($.variable_value)
       )),
       '}'
     ),
 
     variable_name: $ => token(repeat1(VAR_CHAR)),
 
-    variable_payload: $ => token(repeat1(choice(VAR_CHAR, ':'))),
+    variable_value: $ => token(repeat1(choice(VAR_CHAR, ':'))),
 
     list: $ => seq(
       '(',

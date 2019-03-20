@@ -29,7 +29,7 @@ enum {
   anon_sym_COLON = 13,
   anon_sym_RBRACE = 14,
   sym_variable_name = 15,
-  sym_variable_payload = 16,
+  sym_variable_value = 16,
   anon_sym_LPAREN = 17,
   anon_sym_RPAREN = 18,
   sym_comment = 19,
@@ -64,7 +64,7 @@ static const char *ts_symbol_names[] = {
   [anon_sym_COLON] = ":",
   [anon_sym_RBRACE] = "}",
   [sym_variable_name] = "variable_name",
-  [sym_variable_payload] = "variable_payload",
+  [sym_variable_value] = "variable_value",
   [anon_sym_LPAREN] = "(",
   [anon_sym_RPAREN] = ")",
   [sym_comment] = "comment",
@@ -147,7 +147,7 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = true,
     .named = true,
   },
-  [sym_variable_payload] = {
+  [sym_variable_value] = {
     .visible = true,
     .named = true,
   },
@@ -777,7 +777,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
         ADVANCE(52);
       END_STATE();
     case 52:
-      ACCEPT_TOKEN(sym_variable_payload);
+      ACCEPT_TOKEN(sym_variable_value);
       if (lookahead == ':')
         ADVANCE(52);
       if (lookahead != 0 &&
@@ -1133,7 +1133,7 @@ static uint16_t ts_parse_table[STATE_COUNT][SYMBOL_COUNT] = {
   [24] = {
     [anon_sym_RBRACE] = ACTIONS(131),
     [sym_comment] = ACTIONS(3),
-    [sym_variable_payload] = ACTIONS(133),
+    [sym_variable_value] = ACTIONS(133),
   },
   [25] = {
     [sym_comment] = ACTIONS(3),
@@ -1322,7 +1322,7 @@ static uint16_t ts_parse_table[STATE_COUNT][SYMBOL_COUNT] = {
   [41] = {
     [anon_sym_RBRACE] = ACTIONS(220),
     [sym_comment] = ACTIONS(3),
-    [sym_variable_payload] = ACTIONS(222),
+    [sym_variable_value] = ACTIONS(222),
   },
   [42] = {
     [sym_comment] = ACTIONS(3),
@@ -1340,7 +1340,7 @@ static uint16_t ts_parse_table[STATE_COUNT][SYMBOL_COUNT] = {
   [43] = {
     [anon_sym_RBRACE] = ACTIONS(228),
     [sym_comment] = ACTIONS(3),
-    [sym_variable_payload] = ACTIONS(230),
+    [sym_variable_value] = ACTIONS(230),
   },
   [44] = {
     [anon_sym_PERCENT] = ACTIONS(226),
@@ -1360,7 +1360,7 @@ static uint16_t ts_parse_table[STATE_COUNT][SYMBOL_COUNT] = {
   [45] = {
     [anon_sym_RBRACE] = ACTIONS(232),
     [sym_comment] = ACTIONS(3),
-    [sym_variable_payload] = ACTIONS(234),
+    [sym_variable_value] = ACTIONS(234),
   },
   [46] = {
     [anon_sym_PERCENT] = ACTIONS(226),

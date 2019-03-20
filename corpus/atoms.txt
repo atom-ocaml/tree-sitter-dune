@@ -23,6 +23,6 @@ Variables
     (variable (variable_name))
     (variable (variable_name)))
   (atom
-    (variable (variable_name) (variable_payload)))
+    (variable (variable_name) (variable_value)))
   (atom
-    (variable (variable_name) (variable_payload))))
+    (variable (variable_name) (variable_value))))
