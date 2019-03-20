@@ -1,0 +1,57 @@
+===========================
+Quoted strings
+===========================
+
+"string"
+"%{var}"
+";"
+"
+"
+
+---
+
+(configuration
+  (quoted_string)
+  (quoted_string (variable (variable_name)))
+  (quoted_string)
+  (quoted_string))
+
+===========================
+Block strings
+===========================
+
+"\| string
+"\| %{var}
+"\| ;
+
+---
+
+(configuration
+  (block_string)
+  (block_string (variable (variable_name)))
+  (block_string))
+
+===========================
+Raw Block strings
+===========================
+
+"\> ; %{var} \n
+
+---
+
+(configuration
+  (raw_string))
+
+===========================
+Escape sequences
+===========================
+
+"\n\%{no_var}"
+"\
+ "
+
+---
+
+(configuration
+  (quoted_string (escape_sequence) (escape_sequence))
+  (quoted_string (escape_sequence)))

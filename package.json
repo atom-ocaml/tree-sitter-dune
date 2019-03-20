@@ -1,0 +1,26 @@
+{
+  "name": "tree-sitter-dune",
+  "version": "0.14.0",
+  "description": "Dune grammar for tree-sitter",
+  "keywords": [
+    "tree-sitter",
+    "parser",
+    "ocaml",
+    "dune"
+  ],
+  "homepage": "https://github.com/atom-ocaml/tree-sitter-dune",
+  "license": "MIT",
+  "author": "Pieter Goetschalckx",
+  "main": "index.js",
+  "repository": "github:atom-ocaml/tree-sitter-dune",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test"
+  },
+  "dependencies": {
+    "nan": "^2.13.1"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.14.5"
+  }
+}

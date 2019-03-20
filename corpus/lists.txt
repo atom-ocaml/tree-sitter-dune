@@ -1,0 +1,12 @@
+===========================
+Lists
+===========================
+
+(atom "string" 1.0)
+()
+
+---
+
+(configuration
+  (list (atom) (quoted_string) (atom))
+  (list))

@@ -1,0 +1,28 @@
+===========================
+Atoms
+===========================
+
+hello + %
+
+---
+
+(configuration (atom) (atom) (atom))
+
+===========================
+Variables
+===========================
+
+%{var}%{var:}
+%{var:value}
+%{var:value:value}
+
+---
+
+(configuration
+  (atom
+    (variable (variable_name))
+    (variable (variable_name)))
+  (atom
+    (variable (variable_name) (variable_payload)))
+  (atom
+    (variable (variable_name) (variable_payload))))
