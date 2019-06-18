@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-dune",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "description": "Dune grammar for tree-sitter",
   "keywords": [
     "tree-sitter",
@@ -18,9 +18,9 @@
     "test": "tree-sitter test"
   },
   "dependencies": {
-    "nan": "^2.13.1"
+    "nan": "^2.14.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.14.5"
+    "tree-sitter-cli": "^0.15.3"
   }
 }

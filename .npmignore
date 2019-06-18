@@ -1,3 +1,4 @@
 corpus
 build
 .travis.yml
+tree-sitter-dune.wasm

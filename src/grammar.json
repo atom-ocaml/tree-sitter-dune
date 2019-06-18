@@ -399,5 +399,7 @@
   "inline": [
     "_value",
     "_variable_trail"
-  ]
+  ],
+  "supertypes": []
 }
+
